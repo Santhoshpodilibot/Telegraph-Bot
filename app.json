@@ -8,7 +8,7 @@
         "war Bots"
     ],
     "repository": "https://github.com/albinpraveen/Telegraph-Bot",
-    "success_url": "https://t.me/musicwithalby",
+    "success_url": "https://t.me/santhuvc",
     "env": {
         "TG_BOT_TOKEN": {
             "description": "Your Telegram Bot Token from @BotFather",
