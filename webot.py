@@ -17,20 +17,20 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Webot.send_message(
                chat_id=message.chat.id,
-               text="""<b>Hey There, I'm Telegraph Bot
+               text="""<b>💟 [{BOT_NAME}](https://t.me/{BOT_USERNAME})
 
-I can upload photos or videos to telegraph. Made by @i_am_albin_praveen  
+ɪ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ᴘʜᴏᴛᴏs ᴏʀ ᴠɪᴅᴇᴏs ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.[sᴀɴᴛʜᴜ 💓](ʜᴛᴛᴘs://ᴛ.ᴍᴇ/sᴀɴᴛʜᴜ_ᴍᴜsɪᴄ_ʙᴏᴛ)  
 
-Hit help button to find out more about how to use me</b>""",   
+ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
                                             "Help", callback_data="help"),
                                         InlineKeyboardButton(
-                                            "Channel", url="https://t.me/musicwithalby")
+                                            "🔰ɴᴇᴛᴡᴏʀᴋ🔰", url="https://t.me/santhuvc")
                                     ],[
                                       InlineKeyboardButton(
-                                            "Developer", url="https://t.me/i_am_albin_praveen")
+                                            "💚ɴɪʙʙᴀ sᴀɴᴛʜᴜ❤", url="https://t.me/santhu_music_bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -43,9 +43,9 @@ async def help(client, message):
                chat_id=message.chat.id,
                text="""<b>Telegraph Bot Help!
 
-Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
+ᴊᴜsᴛ sᴇɴᴅ ᴀ ᴘʜᴏᴛᴏ ᴏʀ ᴠɪᴅᴇᴏ ʟᴇss ᴛʜᴀɴ 𝟻ᴍʙ ғɪʟᴇ sɪᴢᴇ, ɪ'ʟʟ ᴜᴘʟᴏᴀᴅ ɪᴛ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.
 
-~ @musicwithalby</b>""",
+~ @santhuvc</b>""",
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -54,7 +54,7 @@ Just send a photo or video less than 5mb file size, I'll upload it to telegraph.
                                             "About", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "Developer", url="https://t.me/i_am_albin_praveen")
+                                            "💚ɴɪʙʙᴀ sᴀɴᴛʜᴜ❤", url="https://t.me/santhu_music_bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -67,12 +67,12 @@ async def about(client, message):
                chat_id=message.chat.id,
                text="""<b>About Telegraph Bot!</b>
 
-<b>♞ owner:</b> <a href="https://t.me/i_am_albin_praveen">Albin </a>
+<b>🤎ᴏᴡɴᴇʀ💘:</b> <a href="https://t.me/santhu_music_bot">Santhu </a>
 
-<b>♞ Support:</b> <a href="https://t.me/musicwithalby">Alby BOT Support </a>
+<b>💝ɴᴇᴛᴡᴏʀᴋ💖:</b> <a href="https://t.me/santhuvc">Santhu vc </a>
 
 
-<b>~ @musicwithalby</b>""",
+<b>~ @santhuvc</b>""",
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
@@ -92,7 +92,7 @@ async def telegraphphoto(client, message):
     except:
         await msg.edit_text("Photo size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @musicwithalby**',
+        await msg.edit_text(f'**ᴜᴘʟᴏᴀᴅᴇᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @santhuvc**',
             disable_web_page_preview=True,
         )
     finally:
@@ -100,7 +100,7 @@ async def telegraphphoto(client, message):
 
 @Webot.on_message(filters.video)
 async def telegraphvid(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("ᴜᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -108,7 +108,7 @@ async def telegraphvid(client, message):
     except:
         await msg.edit_text("Video size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @musicwithalby**',
+        await msg.edit_text(f'**ᴜᴘʟᴏᴀᴅᴇᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @musicwithalby**',
             disable_web_page_preview=True,
         )
     finally:
@@ -116,7 +116,7 @@ async def telegraphvid(client, message):
 
 @Webot.on_message(filters.animation)
 async def telegraphgif(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("ᴜᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -124,7 +124,7 @@ async def telegraphgif(client, message):
     except:
         await msg.edit_text("Gif size should be less than 5mb!") 
     else:
-        await msg.edit_text(f'**Uploaded To Telegraph!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @musicwithalby**',
+        await msg.edit_text(f'**ᴜᴘʟᴏᴀᴅᴇᴅ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ!\n\n👉 https://telegra.ph{response[0]}\n\nJoin @musicwithalby**',
             disable_web_page_preview=True,
         )
     finally:
@@ -146,7 +146,7 @@ async def button(bot, update):
 print(
     """
 Bot Started!
-Join @musicwithalby
+Join @santhuvc
 """
 )
 
