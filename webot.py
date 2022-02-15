@@ -17,20 +17,20 @@ async def start(client, message):
    if message.chat.type == 'private':
        await Webot.send_message(
                chat_id=message.chat.id,
-               text="""<b>💟 [{BOT_NAME}](https://t.me/{BOT_USERNAME})
+               text="""<b>ʜᴇʟʟᴏ.. 💝 ɴᴇɴᴜ ᴍᴇ ᴛᴇʟᴇɢʀᴀᴘʜ ʙᴏᴛ ɴɪ.. 😊
 
-ɪ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ᴘʜᴏᴛᴏs ᴏʀ ᴠɪᴅᴇᴏs ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.[sᴀɴᴛʜᴜ 💓](ʜᴛᴛᴘs://ᴛ.ᴍᴇ/sᴀɴᴛʜᴜ_ᴍᴜsɪᴄ_ʙᴏᴛ)  
+ɪ ᴄᴀɴ ᴜᴘʟᴏᴀᴅ ᴘʜᴏᴛᴏs ᴏʀ ᴠɪᴅᴇᴏs ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ.ᴘᴏᴡᴇʀᴇᴅ ʙʏ: @santhuvc
 
 ʜɪᴛ ʜᴇʟᴘ ʙᴜᴛᴛᴏɴ ᴛᴏ ғɪɴᴅ ᴏᴜᴛ ᴍᴏʀᴇ ᴀʙᴏᴜᴛ ʜᴏᴡ ᴛᴏ ᴜsᴇ ᴍᴇ</b>""",   
                             reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Help", callback_data="help"),
+                                            "💙ɴɪʙʙᴀ ʜᴇʟᴘ💛", callback_data="help"),
                                         InlineKeyboardButton(
                                             "🔰ɴᴇᴛᴡᴏʀᴋ🔰", url="https://t.me/santhuvc")
                                     ],[
                                       InlineKeyboardButton(
-                                            "💚ɴɪʙʙᴀ sᴀɴᴛʜᴜ❤", url="https://t.me/santhu_music_bot")
+                                            "💚ɴɪʙʙᴀ sᴀɴᴛʜᴜ❤❤", url="https://t.me/santhu_music_bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -49,12 +49,12 @@ async def help(client, message):
         reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="start"),
+                                            "◁", callback_data="start"),
                                         InlineKeyboardButton(
-                                            "About", callback_data="about"),
+                                            "🙄ᴀʙᴏᴜᴛ ɴɪʙʙᴀ🧐", callback_data="about"),
                                   ],[
                                         InlineKeyboardButton(
-                                            "💚ɴɪʙʙᴀ sᴀɴᴛʜᴜ❤", url="https://t.me/santhu_music_bot")
+                                            "💚ɴɪʙʙᴀ sᴀɴᴛʜᴜ❤💖", url="https://t.me/santhu_music_bot")
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -76,7 +76,7 @@ async def about(client, message):
      reply_markup=InlineKeyboardMarkup(
                                 [[
                                         InlineKeyboardButton(
-                                            "Back", callback_data="help"),
+                                            "◁", callback_data="help"),
                                     ]]
                             ),        
             disable_web_page_preview=True,        
@@ -84,7 +84,7 @@ async def about(client, message):
 
 @Webot.on_message(filters.photo)
 async def telegraphphoto(client, message):
-    msg = await message.reply_text("Uploading To Telegraph...")
+    msg = await message.reply_text("ᴜᴘʟᴏᴀᴅɪɴɢ ᴛᴏ ᴛᴇʟᴇɢʀᴀᴘʜ...")
     download_location = await client.download_media(
         message=message, file_name='root/jetg')
     try:
@@ -145,7 +145,7 @@ async def button(bot, update):
 
 print(
     """
-Bot Started!
+Nibba bot started successfully 💘!
 Join @santhuvc
 """
 )
